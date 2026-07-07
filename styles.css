@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6, span {
     line-height: 1.25;
 }
 
+img {
+    width: 100%;
+}
+
 h1 {
     font-size: 36px;
 }
@@ -274,7 +278,6 @@ padding-top: 8px;
 }
 
 .project-img {
-  width: 1000px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -287,6 +290,7 @@ padding-top: 8px;
    border-radius: 20px;
    overflow: hidden;
    position: relative;
+   
 }
 
 .project__wrapper:before {
@@ -298,7 +302,16 @@ padding-top: 8px;
    width: 100%;
    background-color: #1c1d25;
    opacity: 0;
+   transition: opacity 450ms ease;
+   z-index: 2;
 }
 
-project__wrapper:
+.project:hover .project__wrapper:before {
+    opacity: 0.7;
+}  
+
+.project:hover .project__img {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
 
