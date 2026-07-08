@@ -144,6 +144,7 @@ nav {
 }
 
 /*IMPROVING MY PICTURE*/
+
 transform: scale(1.5);
 padding-top: 8px;
 
@@ -272,6 +273,15 @@ padding-top: 8px;
 
 /*PROJECTS*/
 
+.project {
+   margin-bottom: 135px; 
+}
+
+.project:last-child {
+    margin-bottom: 40px;
+}
+
+
 .project-item {
   width: 300px;
   text-align: center;
@@ -311,6 +321,10 @@ padding-top: 8px;
     opacity: 0.7;
 }  
 
+.project__img {
+    transition: all 300ms ease;
+}
+
 .project:hover .project__img {
     transform: scale(1.07);
     filter: blur(5px);
@@ -318,6 +332,7 @@ padding-top: 8px;
 
 .project:hover .project__description {
     opacity: 1;
+    top: 0;
 }
 
 .project__list {
@@ -332,7 +347,7 @@ padding-top: 8px;
     max-width: 550px;
     z-index: 3;
     opacity: 0;
-    transition: transform 450ms, opacity 300ms;
+    transition: transform 450ms, opacity 300ms, top 300ms ease;
 }
 
 .project__description--para {
@@ -346,7 +361,7 @@ padding-top: 8px;
 }
 
 .project__description--title,
-.project__description--subtitle,
+.project__description--sub-title,
 .project__description--para,
 .project__description--link {
     text-align: left;
