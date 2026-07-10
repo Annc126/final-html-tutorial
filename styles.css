@@ -302,6 +302,8 @@ nav {
     opacity: 1;
 }
 
+/*PROJECTS*/
+
 .project:last-child {
     margin-bottom: 40px;
 }
@@ -379,7 +381,7 @@ nav {
 }
 
 .project__description--link {
-    font-size: 20px;
+    font-size: 40PX;
     margin-right: 16px;
     
 }
@@ -478,8 +480,14 @@ h1 {
     } 
 }
 
+.project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
+}
+
 .project__description--para {
-    display: none;
+       display: none;
 }
 
 
@@ -489,7 +497,9 @@ h1 {
 }
 
 .project__description--title {
+    font-size: 32px;
     line-height: 1;
+    text-align: center;
 }
 
 .project__description--sub-title {
