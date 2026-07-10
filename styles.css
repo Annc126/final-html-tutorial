@@ -306,6 +306,10 @@ nav {
     margin-bottom: 40px;
 }
 
+.project {
+    margin-bottom: 40px;
+}
+
 .project-img {
   width: 100%;
   transition: all 500ms ease;
@@ -349,7 +353,7 @@ nav {
 
 .project:hover .project__description {
     opacity: 1;
-    transform: translateY( 50%);
+    transform: translateY(-50%);
 }
 
 .project__list {
